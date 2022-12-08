@@ -2,6 +2,11 @@
   box-sizing: content-box;
 }
 
+:root {
+  --angle: 45deg;
+  --opacity: 0.5;
+}
+
 body {
   max-width: 1280px;
   margin: 0 auto;
@@ -92,8 +97,6 @@ th {
 
 }
 
-
-
 thead,
 tfoot {
   background-color: rgb(41, 16, 75);
@@ -111,6 +114,49 @@ dt~dd {
   background-color: rgb(24, 6, 164);
 }
 
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto 0;
+  width: 300px;
+  height: 50px;
+  background: linear-gradient(0deg, rgb(242, 197, 197), #360e0e);
+}
+
+.link-wrapper:before,
+.link-wrapper:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+      #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.link-wrapper:after {
+  filter: blur(50px);
+}
 
 .footer-container {
   display: flex;
