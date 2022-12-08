@@ -1,0 +1,119 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* fieldset {
+  display: flex;
+  background-color: #eeeeee;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 5px;
+} */
+
+/* legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+} */
+
+/* input {
+  margin: 5px;
+} */
+
+/* a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+} */
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+li:first-of-type+li {
+  color: red;
+  font-size: 22px;
+}
+
+.ul-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+th:hover {
+  background-color: #ffff00;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link:visited {
+  color: #2f8939;
+}
+
+table {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+
+  transition: background-color 1s ease 0s;
+
+}
+
+
+
+thead,
+tfoot {
+  background-color: rgb(41, 16, 75);
+  color: #fff;
+}
+
+/* Child combinator */
+thead>tr {
+  background-color: red;
+}
+
+/* General sibling combinator */
+dt~dd {
+  color: rgb(181, 207, 189);
+  background-color: rgb(24, 6, 164);
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

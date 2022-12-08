@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sing up and inline styles</title>
+</head>
+
+<body>
+  <form>
+    <fieldset style="display:flex; flex-direction: column;  border-radius: 15px;margin: 5px; align-content: center;
+    flex-wrap: wrap;background-color: rgb(235, 226, 226);">
+      <legend>Please enter your email and password</legend>
+      <label for="reqmail">Please enter your email:
+        <input type="email" id="reqmail" name="reqmail" required style="margin: 5px;">
+      </label>
+
+      <label for="password">Please enter your password:
+        <input type="password" id="password" name="password" minlength="8" maxlength="32" required>
+      </label>
+    </fieldset>
+    <button formaction="./index3.html">Login</button>
+  </form>
+</body>
+
+</html>
