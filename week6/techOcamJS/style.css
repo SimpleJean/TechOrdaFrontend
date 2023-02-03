@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
