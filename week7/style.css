@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100vw;
+  align-items: center;
+}
+
+.post-wrapper {
+  display: flex;
+  border: 3px solid #ccc;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px 20px 0 20px;
+  border-radius: 20px 0px 20px 0px;
+
+  width: 70vw;
+}
+
+.title {}
+
+.paragraph {}
+
+.comments {
+  border: 1px solid #940303;
+  padding: 5px;
+}
